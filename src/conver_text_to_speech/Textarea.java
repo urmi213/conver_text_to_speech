@@ -15,7 +15,7 @@ public class Textarea extends JTextArea {
     }
 
     @Override
-    protected void paintComponent(Graphics g) {
+   public void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (getText().isEmpty() && !hasFocus()) {
             Graphics2D g2 = (Graphics2D) g.create();
